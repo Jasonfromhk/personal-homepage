@@ -1,0 +1,349 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(87, 146, 141);
+    height: 5em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    
+}
+
+body{
+    background: url(./images/milia-barriere-pixelgifslowedcar.gif) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+    height: 100%;
+
+    /* background-size: ; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+
+.header-icon{
+    display:flex;
+   
+    padding-left: 10px;
+    width: 50px;
+    height:50px;
+   
+
+}
+
+ul{ 
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: darkslategrey;
+    margin: 2px;
+    
+}
+li{
+    
+margin:2px;
+margin-left: 5px;
+
+}
+a{
+    display: flex;
+  padding: 8px;
+  background-color: #ffffff, 0;
+  justify-content: flex-end;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  font-family:'VT323';
+  font-size: 20pt;
+}
+
+.welcome{
+    background: url(./images/garage-a.jpg) no-repeat;
+    background-position:center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 20px;
+
+
+}
+
+.welcome-text{
+    color:rgb(238, 238, 238);
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family:'VT323';
+    font-size: 35pt;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px black;
+}
+
+
+.btn-start{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-size: 100%;
+    height: 50px;
+    width: 200px;
+    border: 2px;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px
+
+
+
+}
+
+.choose-your-car{
+    color:rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    font-family:'VT323';
+    height: 80%;
+    
+
+}
+
+.car-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(111, 172, 109, 1);
+    padding:0px;
+    margin-bottom:15px;
+    border:10px solid rgba(255,255,255,0);
+    border-radius: 1em;
+
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    background: none;
+    flex-wrap:wrap ;
+    margin-bottom: 30;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.btn-zero{
+    display:flex;
+    background: url(./images/r32gtr.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 110px;
+    width: 200px;
+    color: rgb(17, 16, 16);
+    background-color: #408062;
+    border-color: #198754;
+    
+
+}
+
+.btn-zero:hover{
+    color:rgb(88, 88, 66);
+    background-color:rgba(159, 160, 124, 0.678);
+}
+
+.btn-primary{
+    display:flex;
+    background: url(https://art.pixilart.com/5105e470537c580.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 110px;
+    width: 200px;
+    color: #fff;
+    background-color: #408062;
+    border-color: #198754;
+
+}
+
+.btn-primary:hover{
+    color:rgb(88, 88, 66);
+    background-color:rgba(254, 255, 177, 0.678);
+}
+
+.btn-secondary{
+    display:flex;
+    background: url(https://art.pixilart.com/589ef1c26be1899.png) no-repeat;
+    background-position: center ;
+    background-size: 100%;
+    height: 110px;
+    width: 200px;
+    color: #fff;
+    background-color: #bd9999;
+    border-color: #198754;
+    margin-bottom: 10px;
+
+}
+
+.btn-secondary:hover{
+    color:ivory;
+    background-color:rgba(66, 150, 228, 0.514);
+}
+
+hr.rounded {
+    border-top: 8px solid rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+
+.about{
+    color:rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    font-family:'VT323';
+    height:80%;
+
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(111, 172, 109, 1);
+    padding:0px;
+    margin-bottom:15px;
+    border:10px solid rgba(255,255,255,0);
+    border-radius: 1em;
+
+    
+}
+
+.about-me-content{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20;
+    
+}
+.contact-me{
+    display: flex;
+    
+}
+.filter-color{
+    filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(224deg) brightness(106%) contrast(104%);
+}
+
+
+.container{
+    color: black;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding-left: 10px;
+    color: white;
+    font-family: monospace;
+    
+
+}
+
+.work{
+    color:rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    font-family:'VT323';
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+.container-grid{
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    grid-template-columns: 
+    repeat(3, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+
+}
+
+.test{
+    outline: 1em;
+    border: 1em;
+    box-shadow: rgb(196, 196, 231);
+     
+}
+
+
+/* 
+#keywords {
+    font-size: 2.5em;
+  }
+  #keywords a {
+    display: grid;
+    place-content: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  #keywords a.yellow:hover {
+    color: rgb(151, 151, 6);
+  }
+  #keywords a.pink:hover {
+    color: pink;
+  }
+   */
+
+
+   #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
