@@ -17,7 +17,7 @@ background-color: rgb(121, 112, 112);
 padding-top:0;
 padding-bottom:0;
 padding-left: 1em;
-padding-right: 0.5em;
+padding-right: 1em;
 z-index: 2;
 justify-content: space-between;
 align-content: center;
@@ -48,9 +48,17 @@ right:0;
     padding:0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center;
     flex-direction: row;
-    flex-wrap:  nowrap;
+    flex-wrap:  nowrap; */
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    align-content: center;
 }
 li{
     display:inline-block;
@@ -75,20 +83,33 @@ a:active{
 }
 
 
-#resume{
-    margin-top: 100%;
+#top{
+    margin-top: auto;
 }
+#resume{
+    margin-top: auto;
+}
+#education{
+    margin-top: auto;
+}
+#projects{
+    margin-top: auto;
+}
+#contact{
+    margin-top: auto;
+}
+
 
 /* MAIN HERE */
 
 /* ABOUT ME */
 .top{
-    padding-top: 7em;
+    padding-top: 6em;
     padding-bottom:0;
-    height:100%;
-    display: inline-flex;
+    
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     font-family: 'VT323';
@@ -105,7 +126,7 @@ a:active{
 } */
 
 .card{
-    
+    padding:0;
     margin-left: 2em;
     margin-right: 2em;
     display:flex;
@@ -113,7 +134,7 @@ a:active{
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    
+    width:auto;
     
 }
 .card-text{
@@ -137,40 +158,64 @@ a:active{
 .intro span{
     margin:0;
 }
-
-.lightning{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-  width: 4px;
-  height: 1em;
-  
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  animation-duration: 0.3s;
-    
-}
+ 
 .intro-text{
    margin: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
 }
 
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
-/* RESUME ONLY */
+/* PAGE ALIGNMENT ONLY */
 
-
-
-.resume{
+.page-alignment-a{
     background-color: rgb(202, 202, 202);
-    height: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin: 0;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    font-family: 'VT323';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    
+}
+.page-alignment-b{
+    background-color: rgb(114, 114, 114);
+    padding-top: 7em;
+    padding-bottom: 7em;
+    font-family: 'VT323';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    
+}
+.page-alignment-c{
+    background-color: rgb(202, 202, 202);
+    padding-top: 7em;
+    padding-bottom: 7em;
+    font-family: 'VT323';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    
+}
+.page-alignment-d{
+    background-color: rgb(202, 202, 202);
+    padding-top: 7em;
+    padding-bottom: 7em;
     font-family: 'VT323';
     display: flex;
     justify-content: center;
@@ -180,43 +225,57 @@ a:active{
     
 }
 
-.resume-containers{
+/* .intro-logo{
+    margin-top:10em;
+    margin:auto;
+} */
+
+.box-containers{
     background-color: white;
-    padding: 2em;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left:2em;
+    padding-right: 2em;
     margin: 0.3em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 80%;
 }
 
 .placements{
+    width:30em;
     padding-right: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+
+    border: 10px black;
+    
 }
 
 .placements-textbox{
+    width:30em;
     padding-top:1em;
     padding-left: 0em;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: nowrap;
-    overflow: auto;
+   
 }
 
-
-/* PROJECTS ONLY */
-
-.projects{
-    height: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin: 0;
-    font-family: 'VT323';
+.job-list{
+    list-style-type: disc;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    padding:0;
+    margin-left:0;
+}
+
+.job-list-item{
+    padding:0;
+
 }
