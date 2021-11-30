@@ -14,13 +14,14 @@
     <script src=homepage.js></script>
 
     <div class="header" id="header">
-        <div>
+        <div style="display: flex; justify-content: center; align-items: center;">
             <div class="header-icon">
             </div>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="top-bar">
             <ul>
                 <li><a href="#top" style="font-size: 1em;">HOME</a></li>
+                <li><a href="#about" style="font-size: 1em;">ABOUT</a></li>
                 <li><a href="#resume" style="font-size: 1em;">WORK</a></li>
                 <li><a href="#education" style="font-size: 1em;">EDUCATION </a></li>
                 <li><a href="#projects" style="font-size: 1em;">PROJECTS</a></li>
@@ -32,9 +33,10 @@
     <!--  ABOUT ME  -->
 
     <div class="top" id="top">
-        <div class="about-me" id="about">
+        <div class="about-me" id="about-me">
             <div class="card">
-                <img src="./images/driver.jpg" alt="Avatar" style="width:50%">
+                <img src="./images/driver.jpg" alt="Avatar"
+                    style="display:flex; justify-content:center; max-width: 100%;">
 
             </div>
             <div class="card-text">
@@ -53,23 +55,41 @@
             </div>
             <div class="intro-text">
                 <h4 style="margin-top: 0;padding-bottom: 2em;"><b>Hi everyone!</b> </h4>
-                <p>My name is Jason. A Durham MSc Graduate with experience in Project Manager at a local independent watch studio.</p>
+                <button class="get-started" onclick="window.location.href='#about'"><b>GET STARTED</b> </a></button>
+                <button class="get-started" onclick="window.location.href='#projects'"><b>SEE PROJECTS</b> </a></button>
 
             </div>
         </div>
     </div>
+    <div class="habits" id="about">
+        <div>
+            <img class="intro-logo" src="images/arrow_6.svg" style="width:1.5em; margin:0;transform: scaleX(-1);"></img>
+            <img class="intro-logo" src="images/crown.svg"
+                style="width:1.5em; margin:0;animation: rainbow; animation-duration: 5s; animation-iteration-count: infinite;"></img>
 
+            <img class="intro-logo" src="images/arrow_6.svg" style="width:1.5em; margin:0;"></img>
+        </div>
+        <div class="intro-text">
+            <h4 style="margin-top: 0;padding-bottom: 2em;"><b>A LITTLE BIT MORE ABOUT ME</b> </h4>
+            <p class="intro-text">My name is Jason. A Durham MSc Graduate with experience in Project Manager at a local
+                independent watch
+                studio.</p>
+
+        </div>
+    </div>
 
 
     <!-- RESUME -->
 
     <div class="page-alignment-a" id="resume">
         <div>
-            <img class="intro-logo" src="images/crown.svg" style="width:1.5em"></img>
-            <img class="intro-logo" src="images/crown.svg" style="width:1.5em"></img>
-            <img class="intro-logo" src="images/crown.svg" style="width:1.5em"></img>
-            <img class="intro-logo" src="images/crown.svg" style="width:1.5em"></img>
-            <img class="intro-logo" src="images/crown.svg" style="width:1.5em"></img>
+            <img class="intro-logo" src="images/open_chest.svg" style="width:1.5em"></img>
+            <img class="intro-logo" src="images/coin.svg"
+                style="width:1.5em; margin:0;animation: rainbow; animation-duration: 5s; animation-iteration-count: infinite;"></img>
+            <img class="intro-logo" src="images/open_chest.svg" style="width:1.5em"></img>
+            <img class="intro-logo" src="images/coin.svg"
+                style="width:1.5em; margin:0;animation: rainbow; animation-duration: 5s; animation-iteration-count: infinite;"></img>
+            <img class="intro-logo" src="images/open_chest.svg" style="width:1.5em"></img>
         </div>
         <div>
             <h2 style="font-size: 6vw; min-width: 3em;">EXPERIENCES by J:W</h2>
@@ -87,21 +107,16 @@
             </div>
             <div class="placements-textbox">
 
-                <p>An international watch OEM/ODM manufacturing company based in Hong Kong, with aspirations to the
+                <p style="padding-bottom:1.5em;">An international watch OEM/ODM manufacturing company based in Hong Kong, with aspirations to the
                     iconic
                     Hong Kong Spirit. </p>
                 <h6><b>Job Responsibilities:</b></h6>
 
-                <ul class="job-list">
-                    <li class="job-list-item"><i>- Managing daily operations at BURLAP WATCHES</i></li>
-                    <li class="job-list-item"><i>- Engagement with ODM/OEM vendor</i></li>
-                    <li class="job-list-item"><i>- Project Management in watch manufacturing process for clients (namely
-                            Shinola, Fossil</i></li>
-                    <li class="job-list-item"><i>- Digital Marketing &Brand Management</i></li>
-                    <li class="job-list-item"><i>- Manage Relationships with clients</i></li>
-                </ul>
-
-
+                <p>> Managing daily operations at BURLAP WATCHES</p>
+                <p>> Engagement with ODM/OEM vendor</p>
+                <p>> Project Management in watch manufacturing process for clients </p>
+                <p>> Digital Marketing &Brand Management</p>
+                <p>> Manage Relationships with clients</p>
 
             </div>
         </div>
@@ -117,17 +132,12 @@
             </div>
             <div class="placements-textbox">
 
-                <p> Agricultural/Grain Trading Division
+                <p style="padding-bottom:1.5em;"> Agricultural/Grain Trading Division
                 </p>
                 <h6><b>Job Responsibilities:</b></h6>
-                <ul class="job-list">
-                    <li class="job-list-item"><i>- Prepare and manage daily reports on trading information</i></li>
-                    <li class="job-list-item"><i>- Liaise between partners, vendors</i></li>
-                    <li class="job-list-item"><i>- Manage Relationships with clients</i></li>
-                    <li class="job-list-item"><i></i></li>
-                    <li class="job-list-item"><i></i></li>
-                </ul>
-
+                <p>> Prepare and manage daily trading reports</p>
+                <p>> Liaise between partners, vendors</p>
+                <p>> Manage Relationships with clients</p>
             </div>
         </div>
         <div class="box-containers">
@@ -141,16 +151,13 @@
             </div>
             <div class="placements-textbox">
 
-                <p> Assurance EG Team
+                <p style="padding-bottom:1.5em;"> Assurance EG Team
                 </p>
                 <h6><b>Job Responsibilities:</b></h6>
-                <ul class="job-list">
-                    <li class="job-list-item"><i>- Assisted auditing teams at various clients’ offices </i></li>
-                    <li class="job-list-item"><i>- Performed tasks: Casting, Vouching, accompanying on Revenue Testing</i></li>
-                    <li class="job-list-item"><i>- Manage Relationships with clients</i></li>
-                    <li class="job-list-item"><i></i></li>
-                    <li class="job-list-item"><i></i></li>
-                </ul>
+                <p>> Assisted auditing teams at various clients’ offices </p>
+                <p>> Performed tasks: Casting, Vouching, accompanying on Revenue
+                    Testing</p>
+                <p>> Manage Relationships with clients</p>
 
             </div>
 
@@ -283,7 +290,20 @@
 
     <!-- FOOTER -->
     <footer class="footer" id="footer">
-        <div>
+
+        <div class="footer-container">
+            <p><b>Designed by J:W <br>
+                    All Rights Reserved.</b></p>
+        </div>
+        <div class="footer-container">
+
+            <ul class="footer-ul">
+                <img src="./images/facebook.svg">
+                <img src="./images/instagram.svg">
+                <img src="./images/linkedin.svg">
+                <img src="./images/facebook.svg">
+                <img src="./images/spotify.svg">
+            </ul>
 
         </div>
 
