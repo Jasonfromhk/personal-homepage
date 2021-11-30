@@ -9,6 +9,7 @@ header{
     top: 0px;
     width: 100%;
     display: flex;
+    z-index: 2;
     
 }
 
@@ -16,7 +17,7 @@ body{
     background: url(./images/milia-barriere-pixelgifslowedcar.gif) no-repeat;
     background-position: center;
     background-attachment: fixed;
-  
+    background:rgb(0, 0, 0,);
     height: 100%;
 
     /* background-size: ; */
@@ -71,6 +72,8 @@ a{
 .welcome{
     background: url(./images/garage-a.jpg) no-repeat;
     background-position:center;
+    
+
     height: 100%;
     width: 100%;
     display: flex;
@@ -144,7 +147,7 @@ a{
 
 .buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: none;
     flex-wrap:wrap ;
     margin-bottom: 30;
